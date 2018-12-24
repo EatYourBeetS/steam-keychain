@@ -4,3 +4,9 @@ WPF App to easily manage all steam keys, with price data, steam url and formatta
 To Use it, you can either download the [Latest Release](Release-WPF.zip), or compile the project yourself.
 
 ![](SampleUsage.gif)
+
+TODO:
+
+- Select Currency
+- Customize Clipboard Text Format
+- Search Filter and Sorting

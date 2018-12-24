@@ -1,0 +1,1 @@
+JsonFile.cs Requires Newtonsoft.Json to be installed

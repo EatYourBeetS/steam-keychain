@@ -85,7 +85,7 @@ namespace SteamKeychain.ViewModels
                 var game = prices.data?.Values.FirstOrDefault();
                 if (game != null)
                 {
-                    var l = game.list.ElementAtOrDefault(0);
+                    var l = game.list?.ElementAtOrDefault(0);
                     if (l != null)
                     {
                         SelectedModel.StoreUrl = l.url;

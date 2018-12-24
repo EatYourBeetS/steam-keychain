@@ -40,10 +40,17 @@ namespace SteamKeychain
 
         private Result<T> ExecuteInternal<T>(RestRequest request)
         {
-            var response = Execute(request);
-            if (response.IsSuccessful)
+            try
             {
-                return JsonConvert.DeserializeObject<Result<T>>(response.Content);
+                var response = Execute(request);
+                if (response.IsSuccessful)
+                {
+                    return JsonConvert.DeserializeObject<Result<T>>(response.Content);
+                }
+            }
+            catch
+            {
+                
             }
 
             return new Result<T>()
